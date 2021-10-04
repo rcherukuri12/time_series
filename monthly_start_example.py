@@ -1,3 +1,4 @@
+# this shows monthly start - beginning of the month example
 import pandas as pd
 import matplotlib.pyplot as plt
 from prophet import Prophet
