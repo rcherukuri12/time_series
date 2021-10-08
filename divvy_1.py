@@ -11,7 +11,7 @@ df['date'] = pd.to_datetime(df['date'])
 # rename columns for prophet
 df.columns = ['ds','y']
 # design the model
-model = Prophet(seasonality_mode="multiplicative")
+model = Prophet(seasonality_mode="multiplicative",yearly_seasonality=4)
 # see how well it fits...
 model.fit(df)
 forecast = model.predict()
